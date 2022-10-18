@@ -85,7 +85,14 @@ const test2 = [
   },
 ];
 
-const inputDate = "10/15/2022" ;
+const inputDate = "10/19/2022" ;
 const filterByDate = (date,submissionArray) => {
   const dateArray = [];
+  for (const array of submissionArray) {
+    if (array.submissionDate === date) {
+      dateArray.push(array);
+    }
+  }return dateArray;
+ 
 };
+filterByDate(inputDate,test1);
