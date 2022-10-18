@@ -1,5 +1,4 @@
 //Data Model for a Submission
-console.log("hello");
 const test1 = [
   {
     quizName: "Javascript",
