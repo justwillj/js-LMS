@@ -84,3 +84,5 @@ const test2 = [
     submissionDate: "10/16/2022",
   },
 ];
+
+const inputDate = "10/15/2022" ;
