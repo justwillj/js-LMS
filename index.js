@@ -85,6 +85,12 @@ const test2 = [
   },
 ];
 
+/**
+ * loops through the submission array and returns the test that were done on a specified date
+ * @param {string} date - the date the user wants to see submitted tests
+ * @param {object []} submissionArray - object array of submission test   
+ * @returns {array[]} - the test that were done on that specified date
+ */
 const inputDate = "10/19/2022" ;
 const filterByDate = (date,submissionArray) => {
   const dateArray = [];
