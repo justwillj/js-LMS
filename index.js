@@ -87,5 +87,5 @@ const test2 = [
 
 const inputDate = "10/15/2022" ;
 const filterByDate = (date,submissionArray) => {
-  
+  const dateArray = [];
 };
