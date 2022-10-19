@@ -88,15 +88,6 @@ const test1 = [
     studentName: "Chris",
     submissionDate: "10/25/2022",
   },
-
-  {
-    quizName: "Servers",
-    quizModule: "Database",
-    quizScore: 80.1,
-    studentId: 8,
-    studentName: "Chris",
-    submissionDate: "10/25/2022",
-  },
   {
     quizName: "Servers",
     quizModule: "Database",
@@ -166,7 +157,14 @@ filterByDate(inputDate,test1);
 
 
 
-const inputStudentId = 14;
+const inputStudentId = 6;
 const filterByStudentId = (studentId, submissionArray) => {
   const idArray = [];
+  for (const array of submissionArray) {
+    if (array.studentId === studentId) {
+      idArray.push(array);
+    }
+  }console.log(idArray);
+  return idArray;
 };
+filterByStudentId(inputStudentId, test1);
