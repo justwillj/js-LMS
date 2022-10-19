@@ -206,5 +206,6 @@ findUnsubmitted(inputDate, namesOfStudent, test1);
 
 
 const getAverageScore = (submissionArray) => {
-  
+  let total = 0;
+  let count = 0;
 } 
