@@ -200,3 +200,11 @@ const findUnsubmitted = (date,names,submissionArray) => {
   } return unSubmittedArray;
 };
 findUnsubmitted(inputDate, namesOfStudent, test1);
+
+
+
+
+
+const getAverageScore = (submissionArray) => {
+  
+} 
