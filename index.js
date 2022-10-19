@@ -204,7 +204,11 @@ findUnsubmitted(inputDate, namesOfStudent, test1);
 
 
 
-
+/**
+ * loops through the submission array and adds up the quiz scores to get a average
+ * @param {object[]} submissionArray - object array of submission test  
+ * @returns {string} - the average of the quiz score for that submission array
+ */
 const getAverageScore = (submissionArray) => {
   let total = 0;
   let count = 0;
@@ -219,3 +223,4 @@ for (var array in submissionArray) {
 let average = total/count;
 return average.toFixed(1);
 } 
+getAverageScore(test2);
