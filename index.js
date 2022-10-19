@@ -169,7 +169,7 @@ const filterByStudentId = (studentId, submissionArray) => {
     if (array.studentId === studentId) {
       idArray.push(array);
     }
-  }console.log(idArray);
+  }
   return idArray;
 };
 filterByStudentId(inputStudentId, test1);
