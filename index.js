@@ -186,5 +186,10 @@ const findUnsubmitted = (date,names,submissionArray) => {
     let id = [];
     id.push(name); 
 
-  }
+    for (const array of submissionArray) {
+      if (array.submissionDate !== date && array.studentName == id) {
+        unSubmittedArray.push(array.studentName);  
+      }
+    }
+  } return unSubmittedArray;
 };
