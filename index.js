@@ -43,7 +43,6 @@ const test1 = [
     studentName: "Jake",
     submissionDate: "10/18/2022",
   },
-
   {
     quizName: "HTML",
     quizModule: "CS",
@@ -52,7 +51,69 @@ const test1 = [
     studentName: "Bob",
     submissionDate: "10/18/2022",
   },
+
+  {
+    quizName: "PHP",
+    quizModule: "Database",
+    quizScore: 77.2,
+    studentId: 8,
+    studentName: "Chris",
+    submissionDate: "10/20/2022",
+  },
+
   
+   {
+    quizName: "PHP",
+    quizModule: "Database",
+    quizScore: 82.7,
+    studentId: 6,
+    studentName: "Ryan",
+    submissionDate: "10/20/2022",
+  },
+
+  {
+    quizName: "PHP",
+    quizModule: "Database",
+    quizScore: 99.1,
+    studentId: 22,
+    studentName: "Chad",
+    submissionDate: "10/21/2022",
+  },
+
+  {
+    quizName: "Servers",
+    quizModule: "Database",
+    quizScore: 80.1,
+    studentId: 8,
+    studentName: "Chris",
+    submissionDate: "10/25/2022",
+  },
+  {
+    quizName: "Servers",
+    quizModule: "Database",
+    quizScore: 80.1,
+    studentId: 8,
+    studentName: "Chris",
+    submissionDate: "10/25/2022",
+
+  {
+    quizName: "Servers",
+    quizModule: "Database",
+    quizScore: 80.1,
+    studentId: 6,
+    studentName: "Ryan",
+    submissionDate: "10/28/2022",
+  },
+
+  {
+    quizName: "Servers",
+    quizModule: "Database",
+    quizScore: 60.1,
+    studentId: 22,
+    studentName: "Chad",
+    submissionDate: "10/25/2022",
+  },
+ 
 ];
 
 const test2 = [
