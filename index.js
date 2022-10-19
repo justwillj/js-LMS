@@ -181,4 +181,10 @@ const namesOfStudent = ["Justin", "Jake", "Bob", "Chris", "Ryan", "Chad"];
 const testNamesOfStudent = ["Not in the class", "Hello"];
 const findUnsubmitted = (date,names,submissionArray) => {
   const unSubmittedArray = [];
+
+  for(const name of names){
+    let id = [];
+    id.push(name); 
+
+  }
 };
