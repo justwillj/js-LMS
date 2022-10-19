@@ -61,8 +61,7 @@ const test1 = [
     submissionDate: "10/20/2022",
   },
 
-  
-   {
+  {
     quizName: "PHP",
     quizModule: "Database",
     quizScore: 82.7,
@@ -105,7 +104,6 @@ const test1 = [
     studentName: "Chad",
     submissionDate: "10/25/2022",
   },
- 
 ];
 
 const test2 = [
@@ -140,26 +138,25 @@ const test2 = [
 /**
  * loops through the submission array and returns the test that were done on a specified date
  * @param {string} date - the date the user wants to see submitted tests
- * @param {object []} submissionArray - object array of submission test   
+ * @param {object []} submissionArray - object array of submission test
  * @returns {array[]} - the test that were done on that specified date
  */
-const inputDate = "10/19/2022" ;
-const filterByDate = (date,submissionArray) => {
+const inputDate = "10/19/2022";
+const filterByDate = (date, submissionArray) => {
   const dateArray = [];
   for (const array of submissionArray) {
     if (array.submissionDate === date) {
       dateArray.push(array);
     }
-  }return dateArray;
- 
+  }
+  return dateArray;
 };
-filterByDate(inputDate,test1);
-
+filterByDate(inputDate, test1);
 
 /**
  * loops through the submission array and returns the test that was done by the specified student ID
- * @param {number} studentId - the student ID the user wants to see submitted tests 
- * @param {object []} submissionArray - object array of submission test   
+ * @param {number} studentId - the student ID the user wants to see submitted tests
+ * @param {object []} submissionArray - object array of submission test
  * @returns {array[]} - the test that were done by the specified student ID
  */
 const inputStudentId = 6;
@@ -174,53 +171,49 @@ const filterByStudentId = (studentId, submissionArray) => {
 };
 filterByStudentId(inputStudentId, test1);
 
-
-
 /**
- * loops through the submission array and names of students to see if a student has not turned in a test on a specified date      
+ * loops through the submission array and names of students to see if a student has not turned in a test on a specified date
  * @param {string} date - the date the user wants to see submitted tests
- * @param {array[]} names - names of the student they want to check 
- * @param {object []} submissionArray - object array of submission test 
- * @returns {array} - of the names of the student that have not completed the test on the specified date 
+ * @param {array[]} names - names of the student they want to check
+ * @param {object []} submissionArray - object array of submission test
+ * @returns {array} - of the names of the student that have not completed the test on the specified date
  */
 const namesOfStudent = ["Justin", "Jake", "Bob", "Chris", "Ryan", "Chad"];
 const testNamesOfStudent = ["Not in the class", "Hello"];
-const findUnsubmitted = (date,names,submissionArray) => {
+const findUnsubmitted = (date, names, submissionArray) => {
   const unSubmittedArray = [];
 
-  for(const name of names){
+  for (const name of names) {
     let id = [];
-    id.push(name); 
+    id.push(name);
 
     for (const array of submissionArray) {
       if (array.submissionDate !== date && array.studentName == id) {
-        unSubmittedArray.push(array.studentName);  
+        unSubmittedArray.push(array.studentName);
       }
     }
-  } return unSubmittedArray;
+  }
+  return unSubmittedArray;
 };
 findUnsubmitted(inputDate, namesOfStudent, test1);
 
-
-
-
 /**
  * loops through the submission array and adds up the quiz scores to get a average
- * @param {object[]} submissionArray - object array of submission test  
+ * @param {object[]} submissionArray - object array of submission test
  * @returns {string} - the average of the quiz score for that submission array
  */
 const getAverageScore = (submissionArray) => {
   let total = 0;
   let count = 0;
 
-  for(const array of submissionArray){
-    total += array.quizScore
-}
+  for (const array of submissionArray) {
+    total += array.quizScore;
+  }
 
-for (var array in submissionArray) {
-  if (submissionArray.hasOwnProperty(array)) count++;
-}
-let average = total/count;
-return average.toFixed(1);
-} 
+  for (const array in submissionArray) {
+    if (submissionArray.hasOwnProperty(array)) count++;
+  }
+  let average = total / count;
+  return average.toFixed(1);
+};
 getAverageScore(test2);
