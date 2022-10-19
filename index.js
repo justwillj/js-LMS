@@ -212,4 +212,8 @@ const getAverageScore = (submissionArray) => {
   for(const array of submissionArray){
     total += array.quizScore
 }
+
+for (var array in submissionArray) {
+  if (submissionArray.hasOwnProperty(array)) count++;
+}
 } 
