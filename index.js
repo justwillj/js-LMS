@@ -88,6 +88,7 @@ const test1 = [
     studentName: "Chris",
     submissionDate: "10/25/2022",
   },
+
   {
     quizName: "Servers",
     quizModule: "Database",
@@ -95,7 +96,7 @@ const test1 = [
     studentId: 8,
     studentName: "Chris",
     submissionDate: "10/25/2022",
-
+  },
   {
     quizName: "Servers",
     quizModule: "Database",
@@ -162,3 +163,7 @@ const filterByDate = (date,submissionArray) => {
  
 };
 filterByDate(inputDate,test1);
+
+
+
+const inputStudentId = 14;
