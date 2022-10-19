@@ -208,4 +208,8 @@ findUnsubmitted(inputDate, namesOfStudent, test1);
 const getAverageScore = (submissionArray) => {
   let total = 0;
   let count = 0;
+
+  for(const array of submissionArray){
+    total += array.quizScore
+}
 } 
