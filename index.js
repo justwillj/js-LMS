@@ -173,3 +173,9 @@ const filterByStudentId = (studentId, submissionArray) => {
   return idArray;
 };
 filterByStudentId(inputStudentId, test1);
+
+
+
+
+const namesOfStudent = ["Justin", "Jake", "Bob", "Chris", "Ryan", "Chad"];
+const testNamesOfStudent = ["Not in the class", "Hello"];
