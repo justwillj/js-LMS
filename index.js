@@ -216,4 +216,6 @@ const getAverageScore = (submissionArray) => {
 for (var array in submissionArray) {
   if (submissionArray.hasOwnProperty(array)) count++;
 }
+let average = total/count;
+return average.toFixed(1);
 } 
