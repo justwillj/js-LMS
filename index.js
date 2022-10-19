@@ -168,5 +168,5 @@ filterByDate(inputDate,test1);
 
 const inputStudentId = 14;
 const filterByStudentId = (studentId, submissionArray) => {
-
+  const idArray = [];
 };
