@@ -176,7 +176,13 @@ filterByStudentId(inputStudentId, test1);
 
 
 
-
+/**
+ * loops through the submission array and names of students to see if a student has not turned in a test on a specified date      
+ * @param {string} date - the date the user wants to see submitted tests
+ * @param {array[]} names - names of the student they want to check 
+ * @param {object []} submissionArray - object array of submission test 
+ * @returns {array} - of the names of the student that have not completed the test on the specified date 
+ */
 const namesOfStudent = ["Justin", "Jake", "Bob", "Chris", "Ryan", "Chad"];
 const testNamesOfStudent = ["Not in the class", "Hello"];
 const findUnsubmitted = (date,names,submissionArray) => {
@@ -193,3 +199,4 @@ const findUnsubmitted = (date,names,submissionArray) => {
     }
   } return unSubmittedArray;
 };
+findUnsubmitted(inputDate, namesOfStudent, test1);
