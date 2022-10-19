@@ -156,7 +156,12 @@ const filterByDate = (date,submissionArray) => {
 filterByDate(inputDate,test1);
 
 
-
+/**
+ * loops through the submission array and returns the test that was done by the specified student ID
+ * @param {number} studentId - the student ID the user wants to see submitted tests 
+ * @param {object []} submissionArray - object array of submission test   
+ * @returns {array[]} - the test that were done by the specified student ID
+ */
 const inputStudentId = 6;
 const filterByStudentId = (studentId, submissionArray) => {
   const idArray = [];
