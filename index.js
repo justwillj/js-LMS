@@ -144,6 +144,7 @@ const test2 = [
 const inputDate = "10/19/2022";
 const filterByDate = (date, submissionArray) => {
   const dateArray = [];
+  /*CODE REVIEW: const array tells me the variable shoud be an array, but an individual piece of the submissionArray is an individual submission. Be mindful of what you are naming your variables */
   for (const array of submissionArray) {
     if (array.submissionDate === date) {
       dateArray.push(array);
@@ -183,6 +184,7 @@ const testNamesOfStudent = ["Not in the class", "Hello"];
 const findUnsubmitted = (date, names, submissionArray) => {
   const unSubmittedArray = [];
 
+  /*CODE REVIEW: this is a bit backwards. If you want to talk through this let me know. */
   for (const name of names) {
     let id = [];
     id.push(name);
@@ -204,15 +206,18 @@ findUnsubmitted(inputDate, namesOfStudent, test1);
  */
 const getAverageScore = (submissionArray) => {
   let total = 0;
+  /*CODE REVIEW: you don't need a count variable, we can just reference the array.length*/
   let count = 0;
 
   for (const array of submissionArray) {
     total += array.quizScore;
   }
 
+  /*CODE REVIEW: what's this for? */
   for (const array in submissionArray) {
     if (submissionArray.hasOwnProperty(array)) count++;
   }
+  /*CODE REVIEW: there's no need to create variables just to return them, we can just chain the method call to the statement and return it like this:  return (total/submissionArray.length).toFixed(1); */
   let average = total / count;
   return average.toFixed(1);
 };
